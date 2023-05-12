@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Delete later
+img {
+    width: 20%;
+}
+
+header {
+    background: {
+        image: url(/img/pexels-fauxels-3184430.jpg);
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+}
+
+nav {
+    height: 100%;
+    background-color: rgba($color: whitesmoke, $alpha: .7);
+
+    >ul {
+        width: 80%;
+        height: fit-content;
+    }
+
+    li {
+        width: 100%;
+        display: flex;
+        font-size: 20px;
+
+        a {
+            // border: 1px solid red;
+            width: 100%;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            // transition: .5s;
+        }
+
+        a:hover {
+            background-color: black;
+            color: whitesmoke;
+        }
+    }
+
+    details {
+        >ul {
+            width: 100%;
+        }
+    }
+}
+
+h1 {
+    font-style: italic;
+}
+
+footer {
+    background-color: grey;
+    color: whitesmoke;
+}
+
+// HOME
+#home {
+    h2 {
+        text-shadow: 5px 5px darkgray;
+        font-weight: 600;
+        padding: 10px;
+        width: 100%;
+        border-bottom: 3px solid black;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#our-goal {
+    text-align: center;
+
+    img {
+        width: 40%;
+    }
+
+    >p:first-child {
+        font-size: 50px;
+    }
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+
+    article {
+        padding: 3%;
+        border: 2px dashed grey;
+
+        aside {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+#locations {
+
+    article {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 2vw;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {}
+
+@media (min-width:768px) {
+    header {
+        height: 20vh;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #home {
+        p {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    nav a {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #home {
+        p {
+            font-size: 25px;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+
+        #locations {
+
+            article {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        }
+    }
+
+}
