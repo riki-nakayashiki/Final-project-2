@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Lora";
 }
 
 // Delete later
@@ -8,13 +9,17 @@ img {
     width: 20%;
 }
 
-header {
+@mixin backGroundImage($url) {
     background: {
-        image: url(/img/pexels-fauxels-3184430.jpg);
+        image: $url;
         position: center;
         size: cover;
         repeat: no-repeat;
     }
+}
+
+header {
+    @include backGroundImage(url('/img/pexels-fauxels-3184430.jpg'))
 }
 
 nav {
@@ -32,7 +37,6 @@ nav {
         font-size: 20px;
 
         a {
-            // border: 1px solid red;
             width: 100%;
             text-align: center;
             color: black;
@@ -62,15 +66,17 @@ footer {
     color: whitesmoke;
 }
 
+// COMMON
+h2 {
+    text-shadow: 5px 5px darkgray;
+    font-weight: 600;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
 // HOME
 #home {
-    h2 {
-        text-shadow: 5px 5px darkgray;
-        font-weight: 600;
-        padding: 10px;
-        width: 100%;
-        border-bottom: 3px solid black;
-    }
 
     section {
         display: flex;
@@ -117,6 +123,47 @@ footer {
 
     img {
         width: 100%;
+    }
+}
+
+// SERVICES
+#services {
+
+    h4 {
+        height: 100%;
+        background-color: rgba($color: whitesmoke, $alpha: .8);
+        border-radius: 50%;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h4:hover{
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    div {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    aside:nth-child(1)>div {
+        @include backGroundImage(url('/img/services/pexels-cottonbro-studio-6153354.jpg'))
+    }
+
+    aside:nth-child(2)>div {
+        @include backGroundImage(url('/img/services/pexels-tara-winstead-8849295.jpg'))
+    }
+
+    aside:nth-child(3)>div {
+        @include backGroundImage(url('/img/services/pexels-pixabay-60504.jpg'))
+    }
+
+    aside:nth-child(4)>div {
+        @include backGroundImage(url('/img/services/pexels-fillipe-gomes-2093252.jpg'))
     }
 }
 
