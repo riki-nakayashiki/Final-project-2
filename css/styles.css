@@ -143,6 +143,20 @@ h2 {
   background-repeat: no-repeat;
 }
 
+#industries article {
+  row-gap: 2vh;
+}
+#industries article aside {
+  width: 100%;
+}
+#industries article aside p {
+  width: 60%;
+}
+#industries article aside:nth-child(odd) {
+  display: flex;
+  justify-content: end;
+}
+
 @media (min-width: 768px) {
   header {
     height: 20vh;
