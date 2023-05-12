@@ -139,7 +139,7 @@ h2 {
         justify-content: center;
     }
 
-    h4:hover{
+    h4:hover {
         background-color: black;
         color: whitesmoke;
     }
@@ -164,6 +164,27 @@ h2 {
 
     aside:nth-child(4)>div {
         @include backGroundImage(url('/img/services/pexels-fillipe-gomes-2093252.jpg'))
+    }
+}
+
+// INDUSTRIES
+#industries {
+    article {
+        row-gap: 2vh;
+
+        aside {
+            width: 100%;
+
+            p {
+                width: 60%;
+            }
+        }
+
+        aside:nth-child(odd) {
+            display: flex;
+            justify-content: end;
+        }
+
     }
 }
 
