@@ -153,6 +153,12 @@ h2 {
   justify-content: end;
 }
 
+#contact select, #contact input, #contact textarea {
+  font-size: 20px;
+  border: 2px solid grey;
+  height: 5vh;
+}
+
 @media (min-width: 768px) {
   header {
     height: 20vh;
