@@ -4,11 +4,6 @@
     font-family: "Lora";
 }
 
-// Delete later
-img {
-    width: 20%;
-}
-
 @mixin backGroundImage($url) {
     background: {
         image: $url;
