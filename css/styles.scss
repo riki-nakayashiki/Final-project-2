@@ -183,7 +183,16 @@ h2 {
     }
 }
 
+// Careers
 
+// Contact
+#contact{
+    select,input,textarea{
+        font-size: 20px;
+        border: 2px solid grey;
+        height: 5vh;
+    }
+}
 
 @media (max-width:767px) {}
 
